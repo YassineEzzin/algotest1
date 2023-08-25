@@ -1,0 +1,32 @@
+ALGORITHM algotest
+VAR
+    nb_word,nb_vowles,long : INTEGER;
+    ref:CHAR;
+BEGIN
+ nb_word=0;
+ nb_vowles:=0;
+ long:=0;
+
+WHILE (ref <> . ) DO
+    read(ref)
+    long:=long+1
+
+
+    IF (ref="a" or ref="i" or ref="o" or ref="u" or ref="y" or ref="e") THEN
+        nb_vowles:=nb_vowles+1
+    END_IF
+
+
+
+    IF (ref == " "  ) THEN
+        nb_word:=nb_word + 1
+    END_IF
+
+END_WHILE
+
+write("the length of sentence is :",nb_word);
+write("nombre of words is : ",nb_word);
+write("nombre of nb_vowles is :", nb_vowles);
+
+
+END
