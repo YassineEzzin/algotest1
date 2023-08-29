@@ -1,0 +1,20 @@
+ALGORITHM TEST 2
+VAR
+    nb_disc,ref:INTEGER 
+    tab1,tab2 : ARRAY_OF INTEGER[10];
+
+BEGIN
+ ref:=0
+    FOR i FROM 0 TO max length.tab1 step  DO
+        FOR i FROM 0 TO max STEP length.tab1 -i-1   DO
+            IF (tab1[i]==tab2[j]) THEN
+              ref:=ref+tab1[i]
+                
+                
+            END_IF
+        END_FOR
+
+    END_FOR
+
+    write("la somme est :",ref)
+END
